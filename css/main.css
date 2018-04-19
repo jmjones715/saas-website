@@ -2,6 +2,14 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
+.condensed {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.oswald {
+  font-family: 'Oswald', sans-serif;
+}
+
 .dark-blue {
   background-color: #5475a8;
 }
@@ -36,6 +44,10 @@ html {
   background-color: #656565;
 }
 
+.dark-graytxt {
+  color: #656565;
+}
+
 .green {
   background-color: #7fdec5;
 }
@@ -59,6 +71,7 @@ html {
   border-radius: 4px;
   padding: .375em .5em .42em;
   text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .btn-dark-blue {
@@ -68,6 +81,7 @@ html {
   border-radius: 4px;
   padding: .375em .5em .42em;
   text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .btn-light-blue {
@@ -77,6 +91,7 @@ html {
   border-radius: 4px;
   padding: .375em .5em .42em;
   text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .btn-med-blue {
@@ -86,8 +101,9 @@ html {
   border-radius: 4px;
   padding: .375em .5em .42em;
   text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
-.nav {
-  text-decoration: none;
+nav li {
+  width: 48%;
 }
