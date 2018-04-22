@@ -104,6 +104,43 @@ html {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+.icon-main {
+  padding: 2em;
+}
+
+.pad-l {
+  padding-left: 2em;
+}
+
+.pad-r {
+  padding-right: 2em;
+}
+
 nav li {
   width: 48%;
+}
+
+.nav {
+  display: none;
+}
+
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav-label {
+  cursor: pointer;
+  font-size: 1.25rem;
+  display: block;
+  width: 40px;
+}
+
+.nav-label img {
+  display: block;
+  width: 100%;
 }
