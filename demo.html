@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Plans</title>
+  <title>Demo</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
@@ -35,72 +35,66 @@
   </header>
 
   <div class="grid grid-middle">
-    <div class="gray gutter pad-t-2 pad-b-2 unit xs-1 s-1 m-1 l-1 xl-1">
-      <h2 class="dark-bluetxt bold yotta max-length push-0 text-center">You're almost done<h2>
-        <p class="dark-graytxt not-bold kilo max-length condensed push-0 text-center">Choose a plan that works for you</p>
-      </div>
+    <div class="light-blue island unit xs-1 s-1 m-1 l-1 xl-1">
     </div>
-
-  <main class="wrapper">
-    <h2 class="med-bluetxt text-center push-0 island">Monthly Plans</h2>
-    <table>
-        <thead>
-          <tr>
-            <th class="green island-1-2 med-bluetxt" scope="col">Basic</th>
-            <th class="med-blue island-1-2 greentxt" scope="col">Pro</th>
-            <th class="dark-blue island-1-2 graytxt" scope="col">Premium</th>
-          </tr>
-        </thead>
-        <tbody class="light-gray">
-          <tr>
-            <th class="island-1-2 med-bluetxt" scope="row">$500 per month</th>
-            <td class="island-1-2 bold med-bluetxt">$1,000 per month</td>
-            <td class="island-1-2 bold med-bluetxt">$2,000 per month</td>
-          </tr>
-          <tr>
-            <th class="island-1-2 not-bold" scope="row">Online Support</th>
-            <td class="island-1-2">Online Support</td>
-            <td class="island-1-2">Online Support</td>
-          </tr>
-          <tr>
-            <th class="island-1-2 not-bold" scope="row">Account Management</th>
-            <td class="island-1-2">Account Management</td>
-            <td class="island-1-2">Account Management</td>
-          </tr>
-          <tr>
-            <th class="island-1-2" scope="row">&nbsp;</th>
-            <td class="island-1-2">Custom Reports / Invoice</td>
-            <td class="island-1-2">Custom Reports / Invoice</td>
-          </tr>
-          <tr>
-            <th scope="row">&nbsp;</th>
-            <td class="island-1-2">Custom Ad Creation</td>
-            <td class="island-1-2">Custom Ad Creation</td>
-          </tr>
-          <tr>
-            <th scope="row">&nbsp;</th>
-            <td>&nbsp;</td>
-            <td class="island-1-2">API Support</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="unit xs-1 s-1 island-1-2">
-        <ol class="list-group-inline push-0 pad-b">
-          <li class="unit xs-1-3 s-1-3"><a class="btn-p-blue text-left" href="#">Purchase</a>
-          <li class="unit xs-1-3 s-1-3"><a class="btn-p-green text-center" href="#">Purchase</a>
-          <li class="unit xs-1-3 s-1-3"><a class="btn-gray text-right" href="#">Purchase</a>
-        </ol>
-      </div>
-    </main>
-
     <div class="green island unit xs-1 s-1 m-1 l-1 xl-1">
-      <h4 class="text-center push-0 dark-bluetxt">Not sure which plan to get?</h4>
-      <p class="pad-b-1-2 push-0 text-center dark-graytxt">Try us out for free</p>
-      <ol class="list-group-inline text-center push-0 pad-b pad-t">
-        <li class="pad-r"><a class="btn-light-blue gutter-1-2" href="#">Free Demo</a>
-        <li><a class="btn-med-blue gutter" href="#">Sign Up</a>
-      </ol>
+      <h2 class="dark-bluetxt bold yotta max-length push-0 text-center">Explore AdRoll for free<h2>
+      <p class="dark-graytxt not-bold kilo max-length condensed push-0 text-center">How will trying us out benefit you?</p>
     </div>
+    <div class="med-blue island unit xs-1 s-1 m-1 l-1 xl-1">
+      <p class="graytxt push-0 text-center">AdRoll will help your business grow due to quality advertising and marketing strategies.</p>
+    </div>
+  </div>
+
+  <section>
+    <form class="wrapper island">
+      <div class="pad-b-1-2 pad-t-1-2">
+        <label for="name-f" class="greentxt">*First Name</label>
+        <input id="name-f" required>
+      </div>
+
+      <div class="pad-b-1-2 pad-t-1-2">
+        <label for="name-l" class="greentxt">*Last Name</label>
+        <input id="name-l" required>
+      </div>
+
+      <div class="pad-b-1-2 pad-t-1-2">
+        <label for="phone" class="greentxt">Phone</label>
+        <input id="phone" type="tel">
+      </div>
+
+      <div class="pad-b-1-2 pad-t-1-2">
+        <label for="email" class="greentxt">*E-mail</label>
+        <input id="email" type="email" placeholder="abc@123hotmail.com"required>
+      </div>
+
+      <div class="pad-b-1-2 pad-t-1-2">
+        <label for="company" class="greentxt">*Company Name</label>
+        <input id="company" required>
+      </div>
+
+      <div class="pad-b-1-2 pad-t-1-2">
+        <label for="company-t" class="greentxt">*Company Type</label>
+        <select id="company-t">
+          <option>restaurant</option>
+          <option>electronics</option>
+          <option>health/wellness</option>
+          <option>sports/active</option>
+          <option>toys/games</option>
+          <option>construction</option>
+        </select>
+      </div>
+
+      <div class="pad-b-1-2 pad-t-1-2">
+        <label for="company-o" class="med-bluetxt">If not listed above, type your company type here:</label>
+        <textarea id="company-o"></textarea>
+      </div>
+
+      <div class="text-center pad-t">
+        <button type="submit" class="btn-green">Try Demo</button>
+      </div>
+    </form>
+  </section>
 
     <footer>
       <div class="grid dark-blue">
@@ -147,4 +141,4 @@
     </footer>
 
   </body>
-  </html>
+</html>
