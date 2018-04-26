@@ -11,7 +11,15 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Roboto+Condensed" rel="stylesheet">
 </head>
 <body>
-  <header>
+
+  <ul class="skip-links">
+    <li><a href="#nav">Jump to Navigation</a></li>
+    <li><a href="#banner">Jump to Banner content</a></li>
+    <li><a href="#main">Jump to Main content</a></li>
+    <li><a href="#contact">Jump to Footer/Contact content</a></li>
+  </ul>
+
+  <header role="banner" id="banner">
     <div class="grid grid-middle island">
       <div class="left text-center unit xs-1-4 s-1-4">
         <i class="icon i-32">
@@ -19,7 +27,7 @@
         </i>
         <h1 class="dark-bluetxt kilo push-0"><a href="index.html">AdRoll</a></h1>
       </div>
-      <nav class="unit xs-3-4">
+      <nav role="navigation" id="nav" tabindex="0" class="unit xs-3-4">
         <input type="checkbox" class="nav-check" id="nav-check">
         <label for="nav-check" class="nav-label">
           <img src="images/house.png" alt="open navigation">
@@ -47,57 +55,59 @@
     </div>
   </div>
 
-  <section>
-    <form class="grid wrapper island-2">
-      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 island-1-2">
-        <label for="name-f" class="greentxt">*First Name</label>
-        <input id="name-f" required>
-      </div>
+  <main role="main" id="main" tabindex="0">
+    <section>
+      <form class="grid wrapper island-2">
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 island-1-2">
+          <label for="name-f" class="greentxt">*First Name</label>
+          <input id="name-f" required>
+        </div>
 
-      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 island-1-2">
-        <label for="name-l" class="greentxt">*Last Name</label>
-        <input id="name-l" required>
-      </div>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 island-1-2">
+          <label for="name-l" class="greentxt">*Last Name</label>
+          <input id="name-l" required>
+        </div>
 
-      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 island-1-2">
-        <label for="phone" class="greentxt">Phone</label>
-        <input id="phone" type="tel">
-      </div>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 island-1-2">
+          <label for="phone" class="greentxt">Phone</label>
+          <input id="phone" type="tel">
+        </div>
 
-      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 island-1-2">
-        <label for="email" class="greentxt">*E-mail</label>
-        <input id="email" type="email" placeholder="abc@123hotmail.com"required>
-      </div>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 island-1-2">
+          <label for="email" class="greentxt">*E-mail</label>
+          <input id="email" type="email" placeholder="abc@123hotmail.com" required>
+        </div>
 
-      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 island-1-2">
-        <label for="company" class="greentxt">*Company Name</label>
-        <input id="company" required>
-      </div>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 island-1-2">
+          <label for="company" class="greentxt">*Company Name</label>
+          <input id="company" required>
+        </div>
 
-      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 island-1-2">
-        <label for="company-t" class="greentxt">*Company Type</label>
-        <select id="company-t">
-          <option>restaurant</option>
-          <option>electronics</option>
-          <option>health/wellness</option>
-          <option>sports/active</option>
-          <option>toys/games</option>
-          <option>construction</option>
-        </select>
-      </div>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 island-1-2">
+          <label for="company-t" class="greentxt">*Company Type</label>
+          <select id="company-t">
+            <option>restaurant</option>
+            <option>electronics</option>
+            <option>health/wellness</option>
+            <option>sports/active</option>
+            <option>toys/games</option>
+            <option>construction</option>
+          </select>
+        </div>
 
-      <div class="unit xs-1 s-1 m-1 l-1 xl-1 island-1-2">
-        <label for="company-o" class="med-bluetxt">If not listed above, name your company type here:</label>
-        <textarea id="company-o"></textarea>
-      </div>
+        <div class="unit xs-1 s-1 m-1 l-1 xl-1 island-1-2">
+          <label for="company-o" class="med-bluetxt">If not listed above, name your company type here:</label>
+          <textarea id="company-o"></textarea>
+        </div>
 
-      <div class="unit xs-1 s-1 m-1 l-1 xl-1 text-center pad-t">
-        <button type="submit" class="btn-green">Try Demo</button>
-      </div>
-    </form>
-  </section>
+        <div class="unit xs-1 s-1 m-1 l-1 xl-1 text-center pad-t">
+          <button type="submit" class="btn-green">Try Demo</button>
+        </div>
+      </form>
+    </section>
+  </main>
 
-  <footer>
+  <footer role="contentinfo" id="contact" tabindex="0">
     <div class="grid grid-middle dark-blue">
 
       <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">

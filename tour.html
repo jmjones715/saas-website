@@ -11,7 +11,15 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Roboto+Condensed" rel="stylesheet">
 </head>
 <body>
-  <header>
+
+  <ul class="skip-links">
+    <li><a href="#nav">Jump to Navigation</a></li>
+    <li><a href="#banner">Jump to Banner content</a></li>
+    <li><a href="#main">Jump to Main content</a></li>
+    <li><a href="#contact">Jump to Footer/Contact content</a></li>
+  </ul>
+
+  <header role="banner" id="banner">
     <div class="grid grid-middle island">
       <div class="left text-center unit xs-1-4 s-1-4">
         <i class="icon i-32">
@@ -19,7 +27,7 @@
         </i>
         <h1 class="dark-bluetxt kilo push-0"><a href="index.html">AdRoll</a></h1>
       </div>
-      <nav class="unit xs-3-4">
+      <nav role="navigation" id="nav" tabindex="0" class="unit xs-3-4">
         <input type="checkbox" class="nav-check" id="nav-check">
         <label for="nav-check" class="nav-label">
           <img src="images/house.png" alt="open navigation">
@@ -44,7 +52,7 @@
     </div>
   </div>
 
-  <main>
+  <main role="main" id="main" tabindex="0">
     <section>
       <article>
         <div class="grid">
@@ -153,7 +161,7 @@
 
   </main>
 
-  <footer>
+  <footer role="contentinfo" id="contact" tabindex="0">
     <div class="grid grid-middle dark-blue">
 
       <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
