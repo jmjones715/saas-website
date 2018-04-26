@@ -192,6 +192,14 @@ nav li {
   width: 48%;
 }
 
+nav a:hover {
+  color: #3892e0;
+}
+
+h1:hover {
+  color: #3892e0;
+}
+
 .nav {
   display: none;
 }
